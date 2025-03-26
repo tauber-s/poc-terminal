@@ -1,0 +1,61 @@
+.terminal {
+    background-color: black;
+    color: #00FF00;
+    font-family: "Courier New", Courier, monospace;
+    padding-left: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow-y: hidden;
+  }
+  
+  .output {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+    max-height: 50vh;
+    justify-content: flex-end;
+    overflow-y: auto;
+    scrollbar-width: none;
+  }
+  
+  .line {
+    display: flex;
+    align-items: center;
+  }
+  
+  .prompt {
+    margin-right: 5px;
+  }
+  
+  .input {
+    background-color: black;
+    color: #00FF00;
+    border: none;
+    outline: none;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 18px;
+    width: 100%;
+  }
+  
+  .cursor {
+    animation: blink 1s step-end infinite;
+    display: inline-block;
+    width: 10px;
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .instructions {
+    position: absolute;
+    top: 0;
+  }
+
+  hr {
+    border: 2px dashed;
+  }
