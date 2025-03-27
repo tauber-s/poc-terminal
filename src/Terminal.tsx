@@ -12,7 +12,7 @@ const Terminal: React.FC = () => {
     Send the command to the API and format the response to display line breaks
     */
     try {
-      const response = await fetch(`http://127.0.0.1:8000/command/${command}`);
+      const response = await fetch(`/command/${command}`);
       if (!response.ok) {
         throw new Error('Erro ao executar o comando');
       }
